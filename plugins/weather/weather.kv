@@ -1,0 +1,65 @@
+<my_screen>:
+    id: weather_screen
+    current_image: current_image
+    day_image: day_image
+    temp: temp
+    high_temp: high_temp
+    low_temp: low_temp
+
+    GridLayout:
+        rows: 3
+        cols: 4
+        padding: 10
+
+        canvas.before:
+            Color:
+                rgb: 0,0,0
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            text: 'Current'
+            font_size: 20
+        Image:
+            id: current_image
+            source: ''
+        Label:
+            text: 'Temperature:'
+            font_size: 30
+        Label:
+            id: temp
+            font_size: 30
+            text: ''
+
+        Label:
+            text: 'Day'
+            font_size: 20
+        Image:
+            id: day_image
+            source: ''
+        Label:
+            text: 'High:'
+            font_size: 30
+        Label:
+            id: high_temp
+            font_size: 30
+            text: ''
+
+        Label:
+            text: ''
+        Label:
+            text: ''
+        Label:
+            text: 'Low:'
+            font_size: 30
+        Label:
+            id: low_temp
+            font_size: 30
+            text: ''
+
+
+
+
+
+
